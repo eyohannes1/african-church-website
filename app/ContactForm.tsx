@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 
-const recipient = "cazode.ngcintegratedhealth@gmail.com";
+const recipient = "accaphoenixarizona@gmail.com";
 
 export default function ContactForm() {
   const [name, setName] = useState("");

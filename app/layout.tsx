@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = "https://africanfestivalmass.org";
-const title = "African Festival/Mass 2026 | NAAC Phoenix Chapter";
+const associationName = "African Catholic Community Association of Phoenix, Arizona";
+const title = `African Festival/Mass 2026 | ${associationName}`;
 const description =
   "Support African Festival/Mass 2026 at St. Helen Catholic Parish in Glendale, Arizona. A free celebration of faith, African culture, gospel music, cuisine, and community.";
 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "African Mass 2026",
     "African Festival Phoenix",
-    "NAAC Phoenix Chapter",
+    associationName,
     "African Catholics Arizona",
     "St. Helen Catholic Parish Glendale",
     "African cultural festival Arizona"
@@ -26,13 +27,13 @@ export const metadata: Metadata = {
     title,
     description,
     url: siteUrl,
-    siteName: "NAAC Phoenix Chapter",
+    siteName: associationName,
     images: [
       {
         url: "/assets/community-hero.png",
         width: 1448,
         height: 1086,
-        alt: "NAAC Phoenix Chapter community gathered outside St. Helen Catholic Parish"
+        alt: `${associationName} community gathered outside St. Helen Catholic Parish`
       }
     ],
     locale: "en_US",

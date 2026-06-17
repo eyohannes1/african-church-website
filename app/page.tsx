@@ -3,6 +3,8 @@ import ContactForm from "./ContactForm";
 import MotionEffects from "./MotionEffects";
 
 const DONATION_URL = "";
+const ASSOCIATION_NAME = "African Catholic Community Association of Phoenix, Arizona";
+const CONTACT_EMAIL = "accaphoenixarizona@gmail.com";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -59,8 +61,8 @@ const eventJsonLd = {
   },
   organizer: {
     "@type": "Organization",
-    name: "NAAC Phoenix Chapter",
-    email: "cazode.ngcintegratedhealth@gmail.com",
+    name: ASSOCIATION_NAME,
+    email: CONTACT_EMAIL,
     telephone: "+1-602-575-8356"
   }
 };
@@ -68,9 +70,8 @@ const eventJsonLd = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "NAAC Phoenix Chapter",
-  alternateName: "National Association of African Catholics Phoenix Chapter",
-  email: "cazode.ngcintegratedhealth@gmail.com",
+  name: ASSOCIATION_NAME,
+  email: CONTACT_EMAIL,
   telephone: "+1-602-575-8356",
   address: {
     "@type": "PostalAddress",
@@ -84,7 +85,7 @@ const organizationJsonLd = {
 
 function BrandMark() {
   return (
-    <a className="brand" href="#home" aria-label="NAAC Phoenix Chapter home">
+    <a className="brand" href="#home" aria-label={`${ASSOCIATION_NAME} home`}>
       <span className="brand-seal" aria-hidden="true">
         <Image
           src="/assets/naac-phoenix-logo.png"
@@ -95,8 +96,8 @@ function BrandMark() {
         />
       </span>
       <span>
-        <strong>NAAC Phoenix Chapter</strong>
-        <small>National Association of African Catholics</small>
+        <strong>{ASSOCIATION_NAME}</strong>
+        <small>Phoenix, Arizona</small>
         <em>Together with Christ</em>
       </span>
     </a>
@@ -174,7 +175,7 @@ export default function Home() {
                 Community, and Culture
               </h1>
               <p className="lead">
-                Join NAAC Phoenix Chapter for African Festival/Mass 2026, a free
+                Join {ASSOCIATION_NAME} for African Festival/Mass 2026, a free
                 public celebration of African heritage, gospel music, cuisine,
                 cultural dance, and Christ-centered hospitality.
               </p>
@@ -192,7 +193,7 @@ export default function Home() {
               <div className="image-oval group-hover-media">
                 <Image
                   src="/assets/community-hero.png"
-                  alt="NAAC Phoenix Chapter members gathered outside St. Helen Catholic Parish"
+                  alt={`${ASSOCIATION_NAME} members gathered outside St. Helen Catholic Parish`}
                   width={1448}
                   height={1086}
                   priority
@@ -337,7 +338,7 @@ export default function Home() {
                 <DonateLink>Give when link is live</DonateLink>
                 <a
                   className="button button-secondary"
-                  href="mailto:cazode.ngcintegratedhealth@gmail.com?subject=African%20Festival%2FMass%202026%20Sponsorship"
+                  href={`mailto:${CONTACT_EMAIL}?subject=African%20Festival%2FMass%202026%20Sponsorship`}
                 >
                   Ask about sponsorship
                   <span aria-hidden="true" className="button-arrow">
@@ -347,13 +348,13 @@ export default function Home() {
               </div>
               <p className="placeholder-note" id="donation-url-placeholder">
                 Online giving link coming soon. Until then, contact Dr. Chris
-                Azode at cazode.ngcintegratedhealth@gmail.com or (602) 575-8356.
+                Azode at {CONTACT_EMAIL} or (602) 575-8356.
               </p>
             </div>
             <div className="sponsor-image-panel scale-media">
               <Image
                 src="/assets/community-hero.png"
-                alt="NAAC Phoenix Chapter community gathered outside St. Helen Catholic Parish"
+                alt={`${ASSOCIATION_NAME} community gathered outside St. Helen Catholic Parish`}
                 width={1448}
                 height={1086}
               />
@@ -410,7 +411,7 @@ export default function Home() {
                     (602) 575-8356
                   </span>
                 </a>
-                <a href="mailto:cazode.ngcintegratedhealth@gmail.com">
+                <a href={`mailto:${CONTACT_EMAIL}`}>
                   <Icon label="Email">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M4 6.5h16v11H4z" />
@@ -419,7 +420,7 @@ export default function Home() {
                   </Icon>
                   <span>
                     <strong>Email</strong>
-                    cazode.ngcintegratedhealth@gmail.com
+                    {CONTACT_EMAIL}
                   </span>
                 </a>
               </div>
@@ -458,16 +459,16 @@ export default function Home() {
           <div>
             <h2>Get involved</h2>
             <a href="#sponsor">Make a donation</a>
-            <a href="mailto:cazode.ngcintegratedhealth@gmail.com?subject=African%20Festival%2FMass%202026%20Volunteer">
+            <a href={`mailto:${CONTACT_EMAIL}?subject=African%20Festival%2FMass%202026%20Volunteer`}>
               Volunteer
             </a>
-            <a href="mailto:cazode.ngcintegratedhealth@gmail.com?subject=African%20Festival%2FMass%202026%20Sponsor">
+            <a href={`mailto:${CONTACT_EMAIL}?subject=African%20Festival%2FMass%202026%20Sponsor`}>
               Sponsor an event
             </a>
           </div>
         </div>
         <div className="container footer-bottom">
-          <span>© 2026 NAAC Phoenix Chapter. All rights reserved.</span>
+          <span>{"\u00a9"} 2026 {ASSOCIATION_NAME}. All rights reserved.</span>
           <span>African Festival/Mass 2026</span>
         </div>
       </footer>
