@@ -88,10 +88,10 @@ function BrandMark() {
     <a className="brand" href="#home" aria-label={`${ASSOCIATION_NAME} home`}>
       <span className="brand-seal" aria-hidden="true">
         <Image
-          src="/assets/naac-phoenix-logo.png"
+          src="/assets/acca-phoenix-logo.png"
           alt=""
-          width={1254}
-          height={1254}
+          width={1164}
+          height={1164}
           priority
         />
       </span>
