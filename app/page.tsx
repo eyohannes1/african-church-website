@@ -192,10 +192,11 @@ export default function Home() {
             <div className="hero-media scale-media">
               <div className="image-oval group-hover-media">
                 <Image
-                  src="/assets/community-hero.png"
+                  src="/assets/community-group-2026.jpeg"
                   alt={`${ASSOCIATION_NAME} members gathered outside St. Helen Catholic Parish`}
-                  width={1448}
-                  height={1086}
+                  width={1024}
+                  height={576}
+                  className="hero-group-photo"
                   priority
                 />
               </div>
